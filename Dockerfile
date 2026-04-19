@@ -25,7 +25,10 @@ WORKDIR /app
 
 COPY --from=builder /install /usr/local
 COPY database.py models.py main.py ./
-COPY .env ./
+
+# Переменные окружения будут передаваться при запуске контейнера
+# (через docker run -e или docker-compose)
+# COPY .env ./  <-- ЭТУ СТРОКУ УДАЛИЛИ
 
 # Переменная для проброса графики
 ENV DISPLAY=host.docker.internal:0
