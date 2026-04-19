@@ -1,0 +1,21 @@
+# Виртуальное окружение
+venv/
+.venv/
+env/
+.env
+
+# Файл с секретами
+.env
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Данные PostgreSQL
+postgres_data/
+
+# IDE
+.vscode/
+.idea/
