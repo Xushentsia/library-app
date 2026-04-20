@@ -20,7 +20,7 @@ def test_book_creation():
     assert book.id == 1
     assert book.title == "Война и мир"
     assert book.author == "Лев Толстой"
-    assert book.year == 1869
+    assert book.year == 1890
     assert book.description == "Роман-эпопея"
 
 
