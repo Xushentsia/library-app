@@ -26,16 +26,13 @@ def test_book_creation():
 
 def test_book_optional_fields():
     """Проверяет, что year и description могут быть None (необязательные поля)"""
-    # Создаём книгу только с обязательными полями
     book = Book(
         title="Евгений Онегин",
         author="Александр Пушкин"
     )
 
-    # Проверяем что книга создалась с переданными значениями
     assert book.title == "Евгений Онегин"
     assert book.author == "Александр Пушкин"
 
-    # Проверяем что необязательные поля равны None
     assert book.year is None
     assert book.description is None
